@@ -10,5 +10,5 @@ const server = fastify({
 server.register(productsRoutes);
 
 server.listen({
-    port: 9002
+    port: process.env.PORT ?? 9002
 });
