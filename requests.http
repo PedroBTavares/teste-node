@@ -1,0 +1,9 @@
+DELETE http://localhost:9002/products/1
+# Content-type: application/json
+
+# {
+#    "name": "product3",
+#    "salePrice": 3,
+#    "purchasePrice": 3.00,
+#    "stockQuantity": 33
+# }
