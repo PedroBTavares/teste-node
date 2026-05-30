@@ -1,10 +1,15 @@
 import { fastify } from "fastify";
+import cors from "@fastify/cors";
 import { productsRoutes } from "./routes/products.js";
 
 const server = fastify({
     routerOptions:{
         ignoreTrailingSlash: true
     }
+});
+
+server.register(cors, {
+    origin: "*"
 });
 
 server.register(productsRoutes);
