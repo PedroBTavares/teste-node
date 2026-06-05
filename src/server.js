@@ -9,7 +9,8 @@ const server = fastify({
 });
 
 server.register(cors, {
-    origin: "*"
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"]
 });
 
 server.register(productsRoutes);
